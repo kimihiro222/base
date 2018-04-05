@@ -1,0 +1,22 @@
+{
+  "name": "base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "node-sass": "^4.5.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.1.1"
+  },
+  "scripts": {
+		"watch-sass": "node-sass src/scss/main.scss www/css/main.css -w",
+		"server": "browser-sync start --server www --files=\"./www/**/*\"",
+		"dev": "run-p watch-sass server"
+  },
+  "author": "",
+  "license": "ISC"
+}
