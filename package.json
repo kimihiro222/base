@@ -15,7 +15,7 @@
   "scripts": {
 		"watch-sass": "node-sass src/scss/main.scss www/css/main.css -w",
 		"server": "browser-sync start --server www --files=\"./www/**/*\"",
-		"dev": "run-p watch-sass server"
+		"dev": "npm-run-all -p watch-sass server"
   },
   "author": "",
   "license": "ISC"
