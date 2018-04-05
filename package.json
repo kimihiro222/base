@@ -1,7 +1,6 @@
 {
   "name": "base",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "browser-sync": "^2.18.13",
@@ -13,10 +12,19 @@
     "npm-run-all": "^4.1.1"
   },
   "scripts": {
-		"watch-sass": "node-sass src/scss/main.scss www/css/main.css -w",
-		"server": "browser-sync start --server www --files=\"./www/**/*\"",
-		"dev": "npm-run-all -p watch-sass server"
+    "watch-sass": "node-sass src/scss/main.scss www/css/main.css -w",
+    "server": "browser-sync start --server www --files=\"./www/**/*\"",
+    "dev": "npm-run-all -p watch-sass server"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimihiro222/base.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kimihiro222/base/issues"
+  },
+  "homepage": "https://github.com/kimihiro222/base#readme",
+  "description": ""
 }
